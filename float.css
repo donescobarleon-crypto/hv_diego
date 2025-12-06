@@ -1,0 +1,79 @@
+#caja1 {
+    background-color: brown;
+    float: left;
+    width: 250px;
+    height: 60px;
+    margin: 5px;
+}
+
+#caja2 {
+    background-color: blue;
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+}
+
+#caja3 {
+    background-color: chartreuse;
+    width: 250px;
+    height: 60px;
+    float: left;
+    margin: 5px;
+}
+
+#caja4 {
+    background-color: bisque;
+    width: 250px;
+    height: 265px;
+    float: left;
+    margin: 5px;
+}
+    
+#caja5 {
+    background-color: blueviolet;
+    width: 300px;
+    height: 350px;
+    float: left;
+    margin: 5px;
+}
+
+#caja6 {
+    background-color: aquamarine;
+    float: left;
+    width: 300px;
+    height: 70px;
+    margin: 5px;
+}
+
+#caja7 {
+    background-color: chocolate;
+    float: left;
+    width: 300px;
+    height: 180px;
+    margin: 5px;
+}
+
+#caja8 {
+    background-color: cornflowerblue;
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin: 5px;
+}
+
+#caja9 {
+    background-color: deeppink;
+    float: left;
+    width: 250px;
+    height: 140px;
+    margin: 5px;
+}
+
+#caja10 {
+    background-color: firebrick;
+    float: left;
+    width: 250px;
+    height: 160px;
+    margin: 5px;
+}
