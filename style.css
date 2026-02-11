@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: arial sans-serif;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 100vh;
+}
+
+.izquierda {
+    background-color: #e4e6eb;
+    padding: 10px;
+}
+
+.centro {
+    background-color: #f0f2f5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.derecha {
+    background-color: #e4e6eb;
+    padding: 10px;
+}
+
+.menu {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.publicacion {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.usuario {
+    font-weight: bold;
+}
+
+.texto {
+    color: #333;
+}
+
+.contacto {
+    background-color: white;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
