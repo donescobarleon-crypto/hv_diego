@@ -1,7 +1,13 @@
 body {
     margin: 0;
     background-color: #f0f2f5;
-    font-family: arial sans-serif;
+    font-family: Arial sans-serif;
+}
+
+.imagen-post {
+    width: 60%;
+    border-radius: 8px;
+    margin-top: 8px;
 }
 
 .contenedor {
@@ -58,4 +64,15 @@ body {
     padding: 8px;
     margin-bottom: 8px;
     border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contacto img {
+     width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
 }
