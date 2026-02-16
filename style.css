@@ -1,14 +1,14 @@
 body {
     margin: 0;
     background-color: #f0f2f5;
-    font-family: Arial sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .imagen-post {
-    width: 60%;
+    width: 80%;
     border-radius: 8px;
-    margin-top: 8px;
-}
+    align-self: center;
+}  
 
 .contenedor {
     display: grid;
@@ -24,9 +24,11 @@ body {
 .centro {
     background-color: #f0f2f5;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
 }
 
 .derecha {
@@ -49,6 +51,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    width: 500px; 
 }
 
 .usuario {
@@ -76,3 +80,83 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    color: #1877f2;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.buscador input {
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f0f2f5;
+}
+
+.iconos {
+    display: flex;
+    gap: 15px;
+}
+
+.icono {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.historias {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.historia {
+    width: 110px;  
+    height: 180px;  
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    flex-shrink: 0; 
+}
+
+
+.historia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.historia span {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
