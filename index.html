@@ -1,94 +1,141 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Diego León</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Visual</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-        <!-- encabezado -->
-        <header class="encabezado">
-            <!-- foto perfil -->
-            <img src="img/Imagen1.png" alt="imagenhv">
-            <!-- titulo -->
-            <h1>
-                Diego Alejandro Escobar Leon
-            </h1>
-            <h2>
-                Desarrollador web
-            </h2>
-            <span>
-                donescobarleon@gmail.com  |  3134899012
-            </span>
-            <hr>
-        </header>
-        <!-- contenido -->
-        <main>
-            <!-- sobre mi -->
-            <section>
-                <h2>
-                    Perfil profesional
-                </h2>
-                <p>
-                    Soy un Bachiller Técnico en Conservación de Recursos Naturales con habilidades en ofimática. Mi formación me ha dotado de
-                    conocimientos en conservación ambiental y habilidades en el manejo de herramientas digitales. Soy proactivo, comprometido y
-                    capaz de trabajar en equipo para alcanzar objetivos.        
 
-                </p>
-                <hr>
-            </section>
-            <!-- experiencia laboral -->
-            <section>
-                <h2>
-                    Experiencia Laboral
-                </h2>
-                <ul>
-                    <li>
-                        Mesero/Arroz El Original Paisa
-                        <p>
-                            Noviembre 2024 - Mayo 2025
-                        </p>
-                    </li>
-                    <li>
-                        Mesero/Coffe Parche 
-                        <p>
-                            Junio 2025 - Noviembre 2025
-                        </p>
-                    </li>
-                </ul>
-                <hr>
-            </section>
-            <!-- estudios -->
-            <section>
-                <h2>
-                    Mis estudios
-                </h2>
-                <ul>
-                    <li>
-                        Carrera Técnica/SENA
-                        <p>
-                            Febrero 2022 - Diciembre 2023
-                        </p> 
-                    </li>
-                    <li>
-                        Educación Básica Secundaria/I.E.T Ismael Santofimio Trujillo
-                        <p>
-                            Enero 2017 - Diciembre 2023
-                        </p>
-                    </li>
-                </ul>
-                <hr>
-            </section>
-        </main>
+<header class="navbar">
+    <h1 class="logo">Facebook</h1>
 
-        <footer>
-            Diego Leon - Hoja de vida - 2025
-        </footer>
-
+    <div class="buscador">
+        <input type="text" placeholder="Buscar en Facebook">
     </div>
+
+    <nav class="iconos">
+        <span class="icono">🏠</span>
+        <span class="icono">👥</span>
+        <span class="icono">🔔</span>
+        <span class="icono">💬</span>
+    </nav>
+</header>
+
+<main class="contenedor">
+
+    <!-- IZQUIERDA -->
+    <aside class="izquierda">
+        <ul>
+            <li class="menu">👤 Diego Escobar</li>
+            <li class="menu">🤖 Meta AI</li>
+            <li class="menu">👥 Amigos</li>
+            <li class="menu">📊 Panel profesional</li>
+            <li class="menu">⏰ Recuerdos</li>
+            <li class="menu">💾 Guardado</li>
+            <li class="menu">⬇ Ver más</li>
+        </ul>
+    </aside>
+
+    <!-- CENTRO -->
+    <section class="centro">
+
+        <!-- HISTORIAS -->
+        <section class="historias">
+
+            <article class="historia">
+                <img src="img/perfil1.jpg" alt="">
+                <span>Adrian</span>
+            </article>
+
+            <article class="historia">
+                <img src="img/perfil2.jpg" alt="">
+                <span>Cristiano</span>
+            </article>
+
+            <article class="historia">
+                <img src="img/perfil3.jpg" alt="">
+                <span>Gustavo</span>
+            </article>
+
+            <article class="historia">
+                <img src="img/perfil4.jpg" alt="">
+                <span>Diego</span>
+            </article>
+
+        </section>
+
+        <!-- PUBLICACION 1 -->
+        <article class="publicacion">
+
+            <div class="header-post">
+                <img src="img/perfil4.jpg" class="foto-perfil">
+                <div>
+                    <div class="usuario">Diego Escobar</div>
+                    <div class="tiempo">Hace 1 h</div>
+                </div>
+            </div>
+
+            <p class="texto">9️⃣</p>
+
+            <img src="img/post1.jpg" class="imagen-post">
+
+            <div class="acciones">
+                <span>👍 Me gusta</span>
+                <span>💬 Comentar</span>
+                <span>↗ Compartir</span>
+            </div>
+
+        </article>
+
+        <!-- PUBLICACION 2 -->
+        <article class="publicacion">
+
+            <div class="header-post">
+                <img src="img/perfil1.jpg" class="foto-perfil">
+                <div>
+                    <div class="usuario">Adrian Ramos</div>
+                    <div class="tiempo">Hace 3 h</div>
+                </div>
+            </div>
+
+            <p class="texto">América es el más grande</p>
+
+            <img src="img/post2.jpg" class="imagen-post">
+
+            <div class="acciones">
+                <span>👍 Me gusta</span>
+                <span>💬 Comentar</span>
+                <span>↗ Compartir</span>
+            </div>
+
+        </article>
+
+    </section>
+
+    <!-- DERECHA -->
+    <aside class="derecha">
+        <h3>Contactos</h3>
+
+        <div class="contacto">
+            <img src="img/perfil1.jpg">
+            <span>Adrian Ramos</span>
+        </div>
+
+        <div class="contacto">
+            <img src="img/perfil2.jpg">
+            <span>Cristiano Ronaldo</span>
+        </div>
+
+        <div class="contacto">
+            <img src="img/perfil3.jpg">
+            <span>Gustavo Petro</span>
+        </div>
+
+    </aside>
+
+</main>
+
 </body>
-
 </html>
-
-

@@ -1,3 +1,299 @@
-.encabezado{
-    text-align: center;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1);
+}
+
+.logo {
+    color: #1877f2;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.buscador input {
+    width: 15rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1.25rem;
+    border: none;
+    background-color: #f0f2f5;
+}
+
+.iconos {
+    display: flex;
+    gap: 1rem;
+}
+
+.icono {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* LAYOUT */
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    min-height: 100vh;
+}
+
+.izquierda,
+.derecha {
+    background-color: #e4e6eb;
+    padding: 0.8rem;
+}
+
+.centro {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    background-color: white;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+/* HISTORIAS */
+.historias {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.historia {
+    width: 7rem;
+    height: 11rem;
+    border-radius: 0.75rem;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.historia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* EFECTO OSCURO */
+.historia::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.historia span {
+    position: absolute;
+    bottom: 0.6rem;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+/* POSTS */
+.publicacion {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    width: 100%;
+    max-width: 32rem;
+}
+
+/* HEADER POST */
+.header-post {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.foto-perfil {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.usuario {
+    font-weight: bold;
+}
+
+.tiempo {
+    font-size: 0.75rem;
+    color: gray;
+}
+
+.texto {
+    color: #333;
+}
+
+/* IMAGEN POST */
+.imagen-post {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* ACCIONES */
+.acciones {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+/* CONTACTOS */
+.contacto {
+    background-color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contacto img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ========================= */
+/* 📱 TABLET (menos de 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+
+    .contenedor {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .derecha {
+        display: none;
+    }
+
+    .buscador input {
+        width: 10rem;
+    }
+}
+
+
+/* ========================= */
+/* 📱 CELULAR (menos de 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+
+    /* layout principal */
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    .izquierda {
+        display: none;
+    }
+
+    .derecha {
+        display: none;
+    }
+
+    /* navbar */
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .buscador input {
+        width: 7rem;
+    }
+
+    .iconos {
+        gap: 0.5rem;
+    }
+
+    /* centro ocupa todo */
+    .centro {
+        padding: 0.5rem;
+        align-items: stretch;
+    }
+
+    /* posts ocupan todo */
+    .publicacion {
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    /* historias más pequeñas */
+    .historia {
+        width: 5.5rem;
+        height: 9rem;
+    }
+}
+
+
+/* ========================= */
+/* 📱 CELULAR PEQUEÑO (menos de 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+
+    .buscador {
+        display: none;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .icono {
+        font-size: 1rem;
+    }
+
+    .historia {
+        width: 5rem;
+        height: 8rem;
+    }
+
+    .texto {
+        font-size: 0.9rem;
+    }
 }
