@@ -269,10 +269,27 @@ body {
 /* --- RESPONSIVE --- */
 
 @media (max-width:600px) {
+   .navbar {
+        grid-template-columns: auto 1fr; 
+        padding: .5rem 1rem;
+        gap: 1rem; 
+    }
+    .logo {
+        font-size: 1.3rem; 
+        white-space: nowrap; 
+    }
+    .iconos {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.8rem; 
+    }
     .buscador { display: none; }
-    .navbar { 
-        padding: .5rem .8rem; 
-        grid-template-columns: auto 1fr;
+    .centro {
+        padding: 1rem .5rem; 
+    }
+    .crear-post, .publicacion {
+        width: 100%;
+        max-width: 100%; 
     }
 }
 
