@@ -200,8 +200,7 @@ body{
     object-fit:cover;
 }
 
-@media only screen and (max-width: 600px) {
-   @media (max-width: 600px) {
+@media (max-width: 600px) {
     .navbar {
         display: grid;
         grid-template-columns: auto auto;
@@ -244,7 +243,7 @@ body{
 }
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
     .historias {
         justify-content: center; 
     }
@@ -259,13 +258,13 @@ body{
    
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
     .historias {
         justify-content: center;
     }
 
 } 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .contenedor {  
         grid-template-columns: 1fr 280px; 
     }
@@ -278,7 +277,7 @@ body{
     
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .contenedor {
         grid-template-columns: 280px 1fr 280px; 
     }
