@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     background: #f0f2f5;
     font-family: Arial, sans-serif;
@@ -265,7 +270,10 @@ body {
 
 @media (max-width:600px) {
     .buscador { display: none; }
-    .navbar { padding: .5rem; }
+    .navbar { 
+        padding: .5rem .8rem; 
+        grid-template-columns: auto 1fr;
+    }
 }
 
 @media (min-width:600px) {
@@ -286,7 +294,7 @@ body {
     .izquierda { display: none; }
 }
 
-@media (min-width:1200px) {
+@media only screen and (min-width: 1200px) {
     .contenedor {
         grid-template-columns: 280px 1fr 280px; 
     }
